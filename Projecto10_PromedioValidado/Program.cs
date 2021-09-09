@@ -13,7 +13,7 @@ namespace Projecto10_PromedioValidado
             int Nota=0;
             int suma = 0;
             while (x<=5) {
-                Console.Write("Ingrese la Nota {0} : ", x);
+                Console.Write("Ingrese la Nota {0} : ", x );
                 Nota = int.Parse(Console.ReadLine());// 170 , 150 , 13 , 15 , 20
                 if (Nota>=0 && Nota<=20)// True , False
                 {
@@ -25,7 +25,9 @@ namespace Projecto10_PromedioValidado
                     Console.WriteLine("Vuelva a ingresar la Nota ");
                 }
             }
-            Console.WriteLine("El Promedio es : {0}", suma/5.0);
+            double promedio = 0;
+            promedio = suma / 5.0;
+            Console.WriteLine("El Promedio es : {0}", promedio);
             Console.ReadKey();
         }
     }
